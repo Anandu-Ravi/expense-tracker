@@ -15,7 +15,6 @@ A simple yet powerful expense tracking application that helps you manage your pe
 - Set and manage monthly income
 - Create custom budgets for different categories
 - Automatic budget adjustment when expenses are added
-- Visual budget progress indicators
 
 ### Financial Summary
 - Monthly financial overview
@@ -23,8 +22,6 @@ A simple yet powerful expense tracking application that helps you manage your pe
 - Category-wise spending breakdown
 - Visual data representation including:
   - Pie charts for expense distribution
-  - Bar graphs for monthly trends
-  - Progress bars for budget tracking
 
 ## Technologies Used
 
