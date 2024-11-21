@@ -1,2 +1,36 @@
-# expense-tracker
-Monthly Expense Tracker using HTML ,CSS ,JS and  Chart.js library.
+# Track My Expense
+
+A simple yet powerful expense tracking application that helps you manage your personal finances with visual insights. Keep track of your spending, set budgets, and monitor your financial health all in one place.
+
+## Features
+### Expense Management
+- Add expenses manually
+- Categorize expenses using custom tags
+- Real-time tracking of:
+  - Total spent amount
+  - Remaining budget
+  - Category-wise spending
+
+### Budget Planning
+- Set and manage monthly income
+- Create custom budgets for different categories
+- Automatic budget adjustment when expenses are added
+- Visual budget progress indicators
+
+### Financial Summary
+- Monthly financial overview
+- Income vs. expense comparison
+- Category-wise spending breakdown
+- Visual data representation including:
+  - Pie charts for expense distribution
+  - Bar graphs for monthly trends
+  - Progress bars for budget tracking
+
+## Technologies Used
+
+- HTML5, CSS3, JavaScript
+- Chart.js for data visualization
+- Local Storage for data persistence
+
+
+
