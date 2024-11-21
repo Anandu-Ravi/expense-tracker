@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="container-title">Monthly Expense Tracker</h2>
+      <div class="grid">
+        <!-- Budget Overview -->
+        <div class="card">
+          <h2 class="card-title">Budget Overview</h2>
+          <div class="form-group">
+            <label class="form-label">Set Monthly Budget</label>
+            <input
+              type="number"
+              id="budgetInput"
+              class="form-input"
+              placeholder="Enter budget amount"
+            />
+          </div>
+          <div class="overview-grid">
+            <div class="overview-item">
+              <p class="overview-label">Spent</p>
+              <p class="overview-value" id="totalSpent">$0.00</p>
+            </div>
+            <div class="overview-item">
+              <p class="overview-label">Remaining</p>
+              <p class="overview-value" id="remainingBudget">$0.00</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add Expense -->
+        <div class="card">
+          <h2 class="card-title">Add Expense</h2>
+          <form id="expenseForm">
+            <div class="form-group">
+              <label class="form-label">Amount</label>
+              <input
+                type="number"
+                id="amountInput"
+                class="form-input"
+                placeholder="Enter amount"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Category</label>
+              <select id="categoryInput" class="form-input" required>
+                <option value="">Select category</option>
+                <option value="Food">Food</option>
+                <option value="Transport">Transport</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Bills">Bills</option>
+                <option value="Healthcare">Healthcare</option>
+                <option value="Others">Others</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Description</label>
+              <input
+                type="text"
+                id="descriptionInput"
+                class="form-input"
+                placeholder="Enter description"
+              />
+            </div>
+            <button type="submit" class="btn">Add Expense</button>
+          </form>
+        </div>
+
+        <!-- Recent Expenses -->
+        <div class="card">
+          <h2 class="card-title">Recent Expenses</h2>
+          <div id="expensesList" class="expense-list"></div>
+        </div>
+      </div>
+
+      <!-- Charts -->
+      <div class="charts-grid">
+        <div class="card">
+          <h2 class="card-title expense-chart">Expense Distribution</h2>
+          <div class="chart-container">
+            <canvas id="pieChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
